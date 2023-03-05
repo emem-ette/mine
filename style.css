@@ -1,0 +1,447 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 100%;
+  background-color: black;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#header {
+  padding: 20px 0;
+  background-color: cornflowerblue;
+}
+
+#header h3 {
+  font-size: 30px;
+  font-family: "Bellefair", serif;
+  font-weight: 300;
+  text-align: right;
+  padding-right: 20px;
+  color: white;
+}
+
+.mySlides {
+  display: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  background-color: black;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: 700;
+  font-size: 25px;
+  transition: 0.7s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: cornflowerblue;
+}
+
+.prev:active,
+.next:active {
+  background-color: cornflowerblue;
+}
+
+.text {
+  color: white;
+  font-size: 18px;
+  font-family: "Barlow Condensed", sans-serif;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  background-color: cornflowerblue;
+}
+
+.numbertext {
+  color: white;
+  font-size: 18px;
+  font-family: "Barlow Condensed", sans-serif;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+#flex-container {
+  overflow: hidden;
+}
+
+#flex-item-2 {
+  padding: 400px 0;
+  background-color: black;
+  position: relative;
+}
+
+.intro {
+  display: grid;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.intro p,
+h2,
+h4 {
+  color: white;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+}
+
+.intro p {
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.7;
+  padding-bottom: 20px;
+  font-size: 18px;
+}
+
+.intro h2 {
+  text-align: center;
+  min-width: 200px;
+  line-height: 1.7;
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+
+.intro h4 {
+  text-align: center;
+  line-height: 1.7;
+  font-size: 25px;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+.aboutMe {
+  padding-top: 70px;
+}
+
+.aboutMe h2 {
+  font-size: 20px;
+  font-family: "Bellefair", serif;
+  font-weight: 300;
+}
+
+.aboutMe p {
+  min-width: 300px;
+  font-size: 18px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+footer {
+  padding: 30px 0;
+  background-color: cornflowerblue;
+}
+
+footer p {
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "Barlow Condensed", sans-serif;
+  color: black;
+  text-align: center;
+}
+
+.footer-links {
+  text-align: center;
+  padding-top: 15px;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+footer ul li {
+  display: inline-block;
+  padding: 20px 8px;
+  margin: 7px 8px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+footer ul li a:hover {
+  color: white;
+}
+
+footer ul li i {
+  font-size: 50px;
+}
+
+@media (min-width: 1000px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-size: 100%;
+    background-color: black;
+  }
+
+  #container-for-all {
+    overflow: hidden;
+  }
+
+  #header {
+    height: 10vh;
+    background-color: cornflowerblue;
+  }
+
+  #header h3 {
+    font-size: 35px;
+    font-family: "Bellefair", serif;
+    font-weight: 300;
+    text-align: right;
+    padding-right: 20px;
+    color: white;
+  }
+
+  #flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    height: 120vh;
+    padding-top: 100px;
+    overflow: hidden;
+    background-color: black;
+  }
+
+  #flex-item-1 {
+    width: 450px;
+    height: 600px;
+    padding: 0 20px;
+    margin: 0 20px;
+  }
+
+  .mySlides {
+    display: none;
+  }
+
+  img {
+    vertical-align: middle;
+  }
+
+  .fifth-picture {
+    height: 50%;
+  }
+
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    background-color: black;
+  }
+
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+    transition: 0.7s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover,
+  .next:hover {
+    background-color: cornflowerblue;
+  }
+
+  .prev:active,
+  .next:active {
+    background-color: cornflowerblue;
+  }
+
+  .text {
+    color: white;
+    font-size: 20px;
+    font-family: "Barlow Condensed", sans-serif;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    background-color: cornflowerblue;
+  }
+
+  .numbertext {
+    color: white;
+    font-size: 20px;
+    font-family: "Barlow Condensed", sans-serif;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  #flex-item-2 {
+    width: 600px;
+    height: 600px;
+    padding: 0 20px;
+    margin: 0 20px;
+  }
+
+  .intro {
+    display: grid;
+    justify-content: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .intro p,
+  h2,
+  h4 {
+    color: white;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+  }
+
+  .intro p {
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.7;
+    padding-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .intro h2 {
+    text-align: center;
+    min-width: 200px;
+    line-height: 1.7;
+    font-size: 22px;
+    padding-bottom: 10px;
+  }
+
+  .intro h4 {
+    text-align: center;
+    line-height: 1.7;
+    font-size: 22px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+
+  .aboutMe {
+    padding-top: 70px;
+  }
+
+  .aboutMe h2 {
+    font-size: 20px;
+    font-family: "Bellefair", serif;
+    font-weight: 300;
+    padding-bottom: 20px;
+  }
+
+  .aboutMe p {
+    min-width: 600px;
+    font-size: 20px;
+    font-family: "Barlow Condensed", sans-serif;
+  }
+
+  footer {
+    height: 25vh;
+    background-color: cornflowerblue;
+  }
+
+  footer p {
+    font-size: 22px;
+    font-weight: 300;
+    font-family: "Barlow Condensed", sans-serif;
+    color: black;
+    text-align: center;
+    padding-top: 20px 0;
+  }
+
+  .footer-links {
+    text-align: center;
+    padding-top: 15px;
+  }
+
+  footer ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  footer ul li {
+    display: inline-block;
+    padding: 20px 8px;
+    margin: 7px 8px;
+  }
+
+  footer ul li a {
+    text-decoration: none;
+    color: white;
+  }
+
+  footer ul li a:hover {
+    color: white;
+  }
+
+  footer ul li i {
+    font-size: 50px;
+  }
+}
